@@ -1,1 +1,1 @@
-export const APP_URL = 'https://wouterlab-weather.herokuapp.com/'
+export const API_URL = 'https://wouterlab-weather.herokuapp.com/'
