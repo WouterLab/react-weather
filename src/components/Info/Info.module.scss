@@ -1,5 +1,5 @@
 .info {
-  width: 900px;
+  width: 70%;
   display: flex;
   justify-content: space-around;
   animation: show-component 1s ease-in;
@@ -7,12 +7,17 @@
 
 .imgBox {
   width: 70px;
-  height: 100px;
+  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+.imgBox:last-child {
+  margin-right: 30px;
 }
 
 .img {
@@ -29,5 +34,19 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgBox {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .imgBox:last-child {
+    margin-right: 0;
   }
 }

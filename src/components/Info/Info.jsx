@@ -7,7 +7,7 @@ import pressure from './images/WeatherIcon4.png';
 const Info = (props) => {
   return (
     <div className={styles.info}>
-      <div className={styles.imgBox}>
+      <div className={styles.imgBox} style={{width: '80px'}}>
         <img className={styles.img} src={wind} alt='wind' />
         <div className={styles.img__text}>
           Wind <br /> {props.wind} m/s

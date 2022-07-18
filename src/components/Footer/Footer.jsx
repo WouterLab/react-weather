@@ -14,8 +14,8 @@ const Footer = (props) => {
   }
 
   return (
-    <div>
-      <form className={styles.footer} onSubmit={props.getWeather}>
+    <div className={styles.footer}>
+      <form className={styles.footerForm} onSubmit={props.getWeather}>
         <input
           name='city'
           className={styles.input}
