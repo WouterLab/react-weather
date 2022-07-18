@@ -1,0 +1,33 @@
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.error {
+    display: inline-block;
+    text-align: center;
+}
+
+.error h2 {
+    color: rgb(192, 64, 64);
+}
+
+.animated {
+  animation: show-component 1s ease-in
+}
+
+@keyframes show-component {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

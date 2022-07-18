@@ -1,0 +1,48 @@
+.main {
+  width: 400px;
+  animation: show-component 1s ease-in;
+}
+
+h1 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mainImg {
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+h3 {
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.temp {
+    font-size: 75px;
+    width: 100px;
+    margin: 0 auto 30px auto;
+    font-weight: 600;
+    text-align: center;
+}
+
+span {
+    color: #44a5ff;
+}
+
+@keyframes show-component {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

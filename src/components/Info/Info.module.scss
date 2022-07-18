@@ -1,0 +1,33 @@
+.info {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  animation: show-component 1s ease-in;
+}
+
+.imgBox {
+  width: 70px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@keyframes show-component {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,52 @@
+.footer {
+  width: 1200px;
+  height: 70px;
+  background-color: #161b38;
+  color: white;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.btnBox {
+  position: relative;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  padding: 0;
+  border: none;
+  color: inherit;
+  background-color: transparent;
+}
+
+.button {
+  transition: color 0.5s;
+  width: 60px;
+}
+
+.button:hover {
+  color: #44a5ff;
+}
+
+input[type='text'] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  background-color: white;
+  padding: 12px 20px 12px 10px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type='text']:focus {
+  width: 80%;
+}
+
+input[type='text']::placeholder {
+  font-size: 15px;
+}
