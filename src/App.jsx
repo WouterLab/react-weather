@@ -21,7 +21,7 @@ export default function App() {
 
   const [info, getInfo] = useState(state);
   useEffect(() => {
-    const raw = localStorage.getItem('forecasts') || []
+    const raw = localStorage.getItem('forecasts') || state
     getInfo(JSON.parse(raw))
   }, [])
   useEffect(() => {
