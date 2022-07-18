@@ -20,13 +20,13 @@ export default function App() {
   };
 
   const [info, getInfo] = useState(state);
-  useEffect(() => {
-    const raw = localStorage.getItem('forecasts') || state
-    getInfo(JSON.parse(raw))
-  }, [])
-  useEffect(() => {
-    localStorage.setItem('forecasts', JSON.stringify(info))
-  }, [info])
+  // useEffect(() => {
+  //   const raw = localStorage.getItem('forecasts') || state
+  //   getInfo(JSON.parse(raw))
+  // }, [])
+  // useEffect(() => {
+  //   localStorage.setItem('forecasts', JSON.stringify(info))
+  // }, [info])
 
   const getWeather = async (e) => {
     e.preventDefault();
